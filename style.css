@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.left {
+  width: 40%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.right {
+  padding-left: 10px;
+}
+
+span {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input[type=text], input[type=password] {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+input[type=text]::placeholder, input[type=password]::placeholder {
+  font-size: 8px;
+}
+input[type=text]:focus, input[type=password]:focus {
+  outline: 2px solid aliceblue;
+}
+
+.table, .table1 {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+}
+.table .tr, .table1 .tr {
+  border-bottom: 1px solid gainsboro;
+}
+.table TH, .table1 TH {
+  width: 88px;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+.table .td, .table1 .td {
+  width: 88px;
+  border-bottom: 1px solid gainsboro;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.add-user, .edit-user {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid greenyellow;
+  color: greenyellow;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.add-user:focus, .edit-user:focus {
+  outline: none;
+  background-color: greenyellow;
+  color: white;
+}
+
+.first.active {
+  display: none;
+}
+
+.two {
+  display: none;
+}
+
+.two.active {
+  display: block;
+}
+
+.warn {
+  height: 16px;
+  width: 80px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  margin: 0;
+  display: none;
+}
+
+.warn.active {
+  display: block;
+}
+
+.list {
+  font-size: 16px;
+  font-weight: bold;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+  font-size: 14px;
+}
+ul li {
+  margin-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  font-size: 12px;
+}
+a:hover {
+  transform: scale(0.9);
+}
+
+.edit, .delete {
+  background-color: orange;
+  color: black;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

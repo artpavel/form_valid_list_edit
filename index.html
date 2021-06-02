@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <span>Login</span><input type="text" class="login" placeholder="Enter login">
+        <span>Password</span><input type="password" class="password" placeholder="Enter password">
+        <span>Email address</span><input type="text" class="email" placeholder="Enter email">
+        <p class="first"><span class="warn">Заповніть всі поля</span><input type="submit" value="Add user" class="add-user"></p>
+        <p class="two"><input type="submit" value="Edit user" class="edit-user" onclick="saveEditUser()"></p>
+    </div>
+    <div class="right">
+        <table class="table">
+            <tr>
+                <th class="th">#</th>
+                <th class="th">Login</th>
+                <th class="th">Password</th>
+                <th class="th">Email</th>
+                <th class="th">Edit</th>
+                <th class="th">Delete</th>
+            </tr>
+        </table>
+        <table class="table1"></table>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
